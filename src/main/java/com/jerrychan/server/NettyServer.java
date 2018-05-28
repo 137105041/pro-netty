@@ -7,12 +7,12 @@ import io.netty.channel.nio.NioEventLoopGroup;
 public class NettyServer {
 
     public static void main(String[] args) {
-
+        //设置Netty服务启动引导
         ServerBootstrap serverBootstrap = new ServerBootstrap();
         EventLoopGroup boss = new NioEventLoopGroup(1);
         EventLoopGroup worker = new NioEventLoopGroup();
 
-        serverBootstrap.group(boss,worker);
+        serverBootstrap.group(boss, worker);
 
 
     }
